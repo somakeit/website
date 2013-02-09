@@ -5,9 +5,9 @@
   ],
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "The Wintersmith",
-    "description": "-32°C ain't no problems!",
+    "name": "So Make It",
+    "owner": "So Make It",
+    "description": "Southampton Makerspace",
     "index_articles": 3
   }
 }

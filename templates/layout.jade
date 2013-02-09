@@ -6,6 +6,8 @@ html(lang='en')
       title
         block title
           = locals.name
+          |  | 
+          = page.metadata.title
       //- a(href=locals.url)= locals.name
       //- p= locals.description
       meta(name='viewport', content='width=device-width, initial-scale=1.0')
