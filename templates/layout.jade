@@ -1,0 +1,66 @@
+!!! 5
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.name
+      //- a(href=locals.url)= locals.name
+      //- p= locals.description
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='So Make It is a makerspace located in Southampton, UK. It hosts many groups such as SoutHACKton.')
+      meta(name='author', content='Benjie Gillam')
+      //- link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      //- link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Fredericka+the+Great')
+      //- link(rel='stylesheet', href='/css/github.css')
+      //- link(rel='stylesheet', href='/css/main.css')
+      link(href='../css/bootstrap.min.css', rel='stylesheet')
+      link(href='../css/bootstrap-responsive.min.css', rel='stylesheet')
+      link(href='../css/style.css', rel='stylesheet')
+      // HTML5 shim, for IE6-8 support of HTML5 elements
+      //[if lt IE 9]
+        script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      // Fav and touch icons
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favicon.png">
+
+  body
+    .navbar.navbar-inverse.navbar-static-top
+      .navbar-inner
+        .container
+          // Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize.
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') So Make It
+          // Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse.
+          .nav-collapse.collapse
+            - var active
+            ul(class="nav #{page.metadata.section}")
+              - active = page.metadata.section == 'home' ? 'active':''
+              li(class=active)
+                a(href='/') Home
+              - active = page.metadata.section == 'trustees' ? 'active':''
+              li(class=active)
+                a(href='/trustees/') Trustees
+              - active = page.metadata.section == 'contact' ? 'active':''
+              li(class=active)
+                a(href='/contact/') Contact
+    block content
+      .content!= page.html
+
+    .container
+      footer
+        block footer
+          p.pull-right
+            a(href='#') Back to top
+          p
+            | #{ new Date().getFullYear() } So Make It - we don't really exist yet... Southampton, UK.
+    // Placed at the end of the document so the pages load faster
+    script(src='../js/jquery.js')
+    script(src='../js/bootstrap.min.js')
