@@ -83,8 +83,8 @@ a.brand {
   .hero-unit h1 {
     font-size: 50px;
   }
-  .white-panel {
-    padding: 20px 20px;
+  .white-panel h2 {
+    font-size: 25px;
   }
 }
 @media all and (max-width: 767px) {
@@ -95,6 +95,9 @@ a.brand {
     padding-left: 20px;
     padding-right: 20px;
     height:200px;
+  }
+  .white-panel {
+    padding: 20px 20px;
   }
 }
 @media all and (max-width: 660px) {
