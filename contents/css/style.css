@@ -65,6 +65,10 @@ a.brand {
   margin-bottom: 40px;
 }
 
+.featurette p {
+  overflow: hidden;
+}
+
 .featurette-image {
   width: 256px;
   height: 256px;
