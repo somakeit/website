@@ -53,6 +53,8 @@ html(lang='en')
               - active = page.metadata.section == 'contact' ? 'active':''
               li(class=active)
                 a(href='/contact/') Contact
+              li
+                a(href='http://wiki.somakeit.org.uk/') Wiki
     block content
       .content!= page.html
 
