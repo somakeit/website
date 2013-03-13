@@ -2,6 +2,10 @@ h3 {
   font-weight: normal;
 }
 
+p {
+  font-size: 1.15em;
+}
+
 a.brand {
   min-width: 150px;
   background-image: url(../img/header.png);
@@ -77,6 +81,48 @@ a.brand {
   padding: 30px 12% 80px;
   margin: 80px 0 40px 0;
   box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
+}
+
+.group {
+  border-radius: 10px;
+  background-color: #eee;
+  box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
+  padding: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.group h2 {
+  text-align: center;
+}
+
+.group .img {
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
+  height: 200px;
+  width: 100%;
+  text-align:center;
+  line-height: 200px;
+  font-size: 100px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.group .img.soha {
+  background-image: url(/img/soha2.png);
+}
+
+.group .img.reprap {
+  background-image: url(/img/reprap.png);
+}
+
+footer {
+  margin-top: 20px;
 }
 
 @media all and (max-width: 979px) {

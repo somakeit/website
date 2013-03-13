@@ -50,11 +50,17 @@ html(lang='en')
               - active = page.metadata.section == 'trustees' ? 'active':''
               li(class=active)
                 a(href='/trustees/') Trustees
+              - active = page.metadata.section == 'groups' ? 'active':''
+              li(class=active)
+                a(href='/groups/') Groups
               - active = page.metadata.section == 'contact' ? 'active':''
               li(class=active)
-                a(href='/contact/') Contact
+                a(href='/contact/') Contact/Visit
               li
                 a(href='http://wiki.somakeit.org.uk/') Wiki
+            ul.nav.pull-right
+              li
+                a(href='https://members.somakeit.org.uk/') Members area
     block content
       .content!= page.html
 
