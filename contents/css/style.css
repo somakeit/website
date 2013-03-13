@@ -17,6 +17,14 @@ a.brand {
   whitespace: nowrap;
 }
 
+.btn-huge {
+  padding: 17px 27px;
+  font-size: 24px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
 .navbar-fixed-top {
   margin-bottom: 0;
 }
@@ -34,7 +42,9 @@ a.brand {
 }
 
 .actionbar {
-  margin-top: -74px;
+  margin-top: -54px;
+  clear:both;
+  text-align: center;
 }
 
 .white-panel {
@@ -125,6 +135,30 @@ footer {
   margin-top: 20px;
 }
 
+.upcoming {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  border: 3px solid #eee;
+  padding: 0 20px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
+  text-align: center;
+}
+
+.hero-unit h1 {
+  font-size: 48px;
+}
+.hero-unit h2 {
+  font-size: 25px;
+}
+@media all and (min-width: 1200px) {
+  .hero-unit h1 {
+    font-size: 60px;
+  }
+  .hero-unit h2 {
+    font-size: 31.5px;
+  }
+}
 @media all and (max-width: 979px) {
   .hero-unit h1 {
     font-size: 50px;
