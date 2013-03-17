@@ -162,6 +162,17 @@ a.brand {
 footer {
   margin-top: 20px;
 }
+footer p.backtotop {
+  text-align: right;
+}
+footer p {
+  font-size: 0.9em;
+  margin: 0;
+}
+footer p.legal {
+  font-size: 0.75em;
+  line-spacing: 100%;
+}
 
 .upcoming {
   background-color: rgba(0, 0, 0, 0.7);
