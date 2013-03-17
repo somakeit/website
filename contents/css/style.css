@@ -93,7 +93,12 @@ a.brand {
   box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
 }
 
-.group {
+.sponsors h3 {
+  text-align: center;
+}
+
+.group,
+.sponsor {
   border-radius: 10px;
   background-color: #eee;
   box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
@@ -103,11 +108,13 @@ a.brand {
   text-align: justify;
 }
 
-.group h2 {
+.group h2,
+.sponsor h2 {
   text-align: center;
 }
 
-.group .img {
+.group .img,
+.sponsor .img {
   background-size: 90% auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -115,19 +122,40 @@ a.brand {
   border-radius: 7px;
   box-shadow: 0 1px 10px rgba(0,0,0, 0.25);
   height: 200px;
+  max-width: 400px;
   width: 100%;
   text-align:center;
   line-height: 200px;
   font-size: 100px;
   color: #888;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+}
+.sponsor .img {
+  max-width: 240px;
+  height: 120px;
 }
 
-.group .img.soha {
+.img.soha {
   background-image: url(/img/soha2.png);
 }
 
-.group .img.reprap {
+.img.rideride {
+  background-image: url(/img/rideride2.png);
+}
+
+.img.bitfolk {
+  background-image: url(/img/bitfolk2.png);
+}
+
+.img.etch {
+  background-image: url(/img/etch2.png);
+}
+
+.img.arthouse {
+  background-image: url(/img/arthouse2.png);
+}
+
+.img.reprap {
   background-image: url(/img/reprap.png);
 }
 

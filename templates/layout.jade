@@ -56,6 +56,9 @@ html(lang='en')
               - active = page.metadata.section == 'contact' ? 'active':''
               li(class=active)
                 a(href='/contact/') Contact/Visit
+              - active = page.metadata.section == 'sponsors' ? 'active':''
+              li(class=active)
+                a(href='/sponsors/') Sponsors
               li
                 a(href='http://wiki.somakeit.org.uk/') Wiki
             ul.nav.pull-right
