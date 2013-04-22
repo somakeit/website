@@ -16,6 +16,10 @@ The website is built using [Twitter Bootstrap](http://twitter.github.com/bootstr
 How to build
 ------------
 
+### Have git pull down dependencies:
+
+`git submodule init; git submodule update`
+
 ### Install Wintersmith:
 
 `[sudo] npm install -g wintersmith`
