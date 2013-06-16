@@ -29,40 +29,51 @@ a.brand {
   margin-bottom: 0;
 }
 
-.hero-unit {
-  background-image:url(../img/slides/social.png);
-  background-color:#fff;
-  color:#fff;
-  text-shadow: 0 2px 1px black;
-  background-position:50% 30%;
-  background-size: 100% auto;
-  background-repeat:no-repeat;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.frontpage-banner {
+  background-color: rgb(15, 62, 68);
+  background-image: url('../img/pixelart-noise.png');
+  color: white;
+  text-shadow: 1px 2px 2px black;
 }
-
-.actionbar {
-  margin-top: -54px;
-  clear:both;
+.frontpage-banner h1 {
+  margin-top: 30px;
+}
+.frontpage-banner h1,
+.frontpage-banner h2,
+.frontpage-banner h3 {
+  line-height: 120%;
   text-align: center;
 }
-
-.white-panel {
-  padding: 20px 0;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid lightgray;
+.frontpage-banner .action {
+  margin-bottom: 20px;
+  width: 49.5%;
+  margin-top: 10px;
+}
+.frontpage-banner .action.left {
+  float: left;
+}
+.frontpage-banner .action.right {
+  float: right;
+}
+.frontpage-banner .action p {
+  margin-top: 20px;
   text-align: center;
-  min-height: 40px;
-  line-height: 40px;
+  text-shadow: 1px 1px kpx black;
+  padding: 0 10px;
 }
-
-.actionbar h2 {
-  display: inline;
-  margin-right: 20px;
+.frontpage-banner .action .btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
 }
-.actionbar a {
-  margin-top: -6px;
+.horse {
+  background-image: url(../img/horse.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position:0% 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .quickfacts, .trustees {
@@ -184,68 +195,39 @@ footer p.legal {
   text-align: center;
 }
 
-.hero-unit h1 {
-  font-size: 48px;
-}
-.hero-unit h2 {
-  font-size: 25px;
-}
 @media all and (min-width: 1200px) {
-  .hero-unit h1 {
-    font-size: 60px;
+  .frontpage-banner h1 {
+    font-size: 36px;
   }
-  .hero-unit h2 {
-    font-size: 31.5px;
-  }
-}
-@media all and (max-width: 979px) {
-  .hero-unit h1 {
-    font-size: 50px;
-  }
-  .white-panel h2 {
+  .frontpage-banner h3 {
     font-size: 25px;
   }
 }
-@media all and (max-width: 767px) {
-  .hero-unit {
+@media all and (max-width: 1199px) {
+  .frontpage-banner h1 {
+    font-size: 32px;
+  }
+  .frontpage-banner h3 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 979px) {
+  .horse {
     margin-left: -20px;
-    margin-right: -20px;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    height:200px;
   }
-  .white-panel {
-    padding: 20px 20px;
+  .frontpage-banner h1 {
+    font-size: 28px;
   }
-}
-@media all and (max-width: 660px) {
-  .hero-unit {
-    background-size: 155% auto ;
-
-    overflow:hidden;
-    height:140px;
-  }
-  .actionbar {
-    margin-top: 0px
-  }
-  .hero-unit h1 {
-    font-size: 30px;
-  }
-  .hero-unit h2 {
-    font-size: 20px;
-    line-height: 1;
-  }
-  .actionbar h2 {
+  .frontpage-banner h3 {
     font-size: 20px;
   }
-  .featurette-image.pull-right,
-  .featurette-image.pull-left {
-    float: none;
-  }
 }
-@media all and (max-width: 400px) {
-  .white-panel h2 {
+@media all and (max-width: 767px) {
+  .horse {
     display: none;
+  }
+  .frontpage-banner {
+    margin: 0 -20px;
+    padding: 0 20px;
   }
 }
