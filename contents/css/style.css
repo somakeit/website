@@ -195,6 +195,39 @@ footer p.legal {
   text-align: center;
 }
 
+.box-main,
+.box-side {
+  margin-top: 20px;
+}
+.box-main {
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: rgb(187, 209, 213);
+  background-image: url('../img/pixelart-noise.png');
+}
+
+.box-side {
+  background-color: rgb(15, 63,68);
+  background-image: url('../img/pixelart-noise.png');
+  color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.box-main h1,
+.box-main h2,
+.box-main h3 {
+  font-weight: bold;
+  color: rgb(15, 63, 68);
+}
+
+.box-side h1,
+.box-side h2,
+.box-side h3 {
+  font-weight: bold;
+  color: rgb(118, 162, 170)
+}
+
 @media all and (min-width: 1200px) {
   .frontpage-banner h1 {
     font-size: 36px;
