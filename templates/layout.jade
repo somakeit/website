@@ -78,3 +78,18 @@ html(lang='en')
             | A not-for-profit company limited by guarantee, registered in England and Wales with company number: 08442741. Registered address: 6 Irving Road, SO16 4DZ.
     script(src='/js/jquery.js')
     script(src='/js/bootstrap.min.js')
+    div.google-analytics.
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-41835697-1']);
+        _gaq.push(['_setDomainName', 'somakeit.org.uk']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
